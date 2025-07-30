@@ -1,24 +1,15 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { switchRole } from '../redux/slices/roleSlice';
+import { useSelector } from 'react-redux';
 import { 
   LayoutDashboard, 
   Users, 
   ClipboardList, 
   BarChart3, 
-  Settings,
-  UserCog,
-  User
+  Settings
 } from 'lucide-react';
 
 const Sidebar = ({ activeSection, setActiveSection }) => {
-  const dispatch = useDispatch();
-  const { currentRole, currentUser } = useSelector(state => state.role);
-
-  const handleRoleSwitch = () => {
-    const newRole = currentRole === 'lead' ? 'member' : 'lead';
-    dispatch(switchRole(newRole));
-  };
+  const { currentRole } = useSelector(state => state.role);
 
   const leadNavItems = [
     { id: 'overview', label: 'Dashboard', icon: LayoutDashboard },
@@ -74,33 +65,6 @@ const Sidebar = ({ activeSection, setActiveSection }) => {
           })}
         </ul>
       </nav>
-
-      {/* Role Switch Section */}
-      <div className="p-4 border-t border-slate-700">
-        <div className="bg-slate-700 rounded-lg p-4">
-          <div className="flex items-center justify-between mb-3">
-            <div className="flex items-center space-x-2">
-              {currentRole === 'lead' ? (
-                <UserCog className="h-5 w-5 text-blue-400" />
-              ) : (
-                <User className="h-5 w-5 text-green-400" />
-              )}
-              <span className="text-sm font-medium">
-                {currentRole === 'lead' ? 'Team Lead' : 'Team Member'}
-              </span>
-            </div>
-          </div>
-          
-          <p className="text-xs text-slate-400 mb-3">{currentUser}</p>
-          
-          <button
-            onClick={handleRoleSwitch}
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-3 rounded-lg text-sm font-medium transition-colors duration-200"
-          >
-            Switch to {currentRole === 'lead' ? 'Member' : 'Lead'} View
-          </button>
-        </div>
-      </div>
 
       {/* Settings */}
       <div className="p-4">
