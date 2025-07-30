@@ -113,7 +113,7 @@ const TeamOverview = () => {
             <div className="flex items-start space-x-3">
               <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
               <div>
-                <p className="text-sm font-medium text-gray-900">Sarah Wilson completed "Q4 Report"</p>
+                <p className="text-sm font-medium text-gray-900">Anjali Singh completed "Q4 Report"</p>
                 <p className="text-xs text-gray-500">2 minutes ago</p>
               </div>
             </div>
@@ -121,7 +121,7 @@ const TeamOverview = () => {
             <div className="flex items-start space-x-3">
               <div className="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
               <div>
-                <p className="text-sm font-medium text-gray-900">Mike Johnson joined a meeting</p>
+                <p className="text-sm font-medium text-gray-900">Yashovardhan joined a meeting</p>
                 <p className="text-xs text-gray-500">15 minutes ago</p>
               </div>
             </div>
@@ -129,7 +129,7 @@ const TeamOverview = () => {
             <div className="flex items-start space-x-3">
               <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2"></div>
               <div>
-                <p className="text-sm font-medium text-gray-900">Emily Davis took a break</p>
+                <p className="text-sm font-medium text-gray-900">shreyabhargava@company.comBhargava took a break</p>
                 <p className="text-xs text-gray-500">1 hour ago</p>
               </div>
             </div>
@@ -137,7 +137,7 @@ const TeamOverview = () => {
             <div className="flex items-start space-x-3">
               <div className="w-2 h-2 bg-purple-500 rounded-full mt-2"></div>
               <div>
-                <p className="text-sm font-medium text-gray-900">New task assigned to John Doe</p>
+                <p className="text-sm font-medium text-gray-900">New task assigned to Yash</p>
                 <p className="text-xs text-gray-500">2 hours ago</p>
               </div>
             </div>

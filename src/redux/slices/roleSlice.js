@@ -4,7 +4,7 @@ const roleSlice = createSlice({
   name: 'role',
   initialState: {
     currentRole: 'member', // 'lead' or 'member'
-    currentUser: 'John Doe'
+    currentUser: 'Yash'
   },
   reducers: {
     switchRole: (state, action) => {

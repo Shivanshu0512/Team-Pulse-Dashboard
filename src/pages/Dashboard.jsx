@@ -122,8 +122,8 @@ const Dashboard = () => {
                 <h1 className="text-3xl font-bold text-gray-900 mb-2">My Dashboard</h1>
                 <p className="text-gray-600">Update your status and manage your tasks</p>
               </div>
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <div className="lg:col-span-1">
+              <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
+                <div className="xl:col-span-1">
                   <div className="mb-6">
                     <h2 className="text-xl font-semibold text-gray-900 mb-4">My Status</h2>
                     {currentUserMember && (
@@ -135,7 +135,7 @@ const Dashboard = () => {
                     )}
                   </div>
                 </div>
-                <div className="lg:col-span-2">
+                <div className="xl:col-span-2">
                   {currentUserMember && (
                     <TaskList memberId={currentUserMember.id} />
                   )}

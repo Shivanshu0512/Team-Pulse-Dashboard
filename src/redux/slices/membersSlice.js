@@ -3,16 +3,16 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialMembers = [
   {
     id: 1,
-    name: 'John Doe',
-    email: 'john.doe@company.com',
+    name: 'Yash',
+    email: 'yash.rajput@company.com',
     status: 'Working',
     avatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
     tasks: []
   },
   {
     id: 2,
-    name: 'Sarah Wilson',
-    email: 'sarah.wilson@company.com',
+    name: 'Anjali Singh',
+    email: 'anjalisingh@company.com',
     status: 'Break',
     avatar: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
     tasks: [
@@ -27,8 +27,8 @@ const initialMembers = [
   },
   {
     id: 3,
-    name: 'Mike Johnson',
-    email: 'mike.johnson@company.com',
+    name: 'Yashovardhan',
+    email: 'yashovardhan@company.com',
     status: 'Meeting',
     avatar: 'https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
     tasks: [
@@ -50,8 +50,8 @@ const initialMembers = [
   },
   {
     id: 4,
-    name: 'Emily Davis',
-    email: 'emily.davis@company.com',
+    name: 'Shreya Bhargava',
+    email: 'shreyabhargava@company.com',
     status: 'Offline',
     avatar: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
     tasks: []
